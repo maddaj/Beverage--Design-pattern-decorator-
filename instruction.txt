@@ -1,0 +1,24 @@
+----------------------------
+| Design pattern decorator |
+----------------------------
+
+Programme qui permet de choisir une boisson , de lui ajouter des toppings et renvoie la description de la boisson et son prix total
+
+Dans un café on peut commander des boissons :
+
+    - Espresso : 1.20
+    - Chocolat : 2.10
+    - Thé : 1.70
+
+Les clients de base de la boisson doit changer selon la taille :  
+
+    - Petit : x1 
+    - Moyen : x1.3
+    - Grand : x1.6
+
+Sur chaque boissons on peut ajouter entre 0 et 4 suppléments
+
+- Creme : 0.10
+- Lait : 0.20
+- Chantilly : 1 -> Petit : 1, Moyen : 1.5, Grand : 2
+- Chocolat : 2 -> Petit : 2, Moyen : 2.5, Grand : 3
