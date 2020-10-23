@@ -5,7 +5,6 @@ spl_autoload_register(function ($class_name) {
     $directorys = array(
         'src/class/',
         'src/class/BeverageTopping/',
-        'src/class/BeverageSize/',
         'src/interface/'
     );
     foreach ($directorys as $directory) {
@@ -16,9 +15,21 @@ spl_autoload_register(function ($class_name) {
     }
 });
 
-$largeBeverage = new BeverageModel('Chocolat', 2.10, BeverageModel::SIZE_TALL);
-$largeBeverageWithChantilly = new Chantilly($largeBeverage);
-$largeBeverageWithChantillyAndChocolate = new Chocolate($largeBeverageWithChantilly);
+// $largeBeverage = new BeverageModel('Chocolat', 2.10, BeverageModel::SIZE_TALL);
+// $largeBeverageWithChantilly = new Chantilly($largeBeverage);
+// $largeBeverageWithChantillyAndChocolate = new Chocolate($largeBeverageWithChantilly);
 
-echo $largeBeverageWithChantillyAndChocolate->getDescription() . "<br>";
-echo $largeBeverageWithChantillyAndChocolate->getPrice() . " €<br>";
+// echo $largeBeverageWithChantillyAndChocolate->getDescription() . "<br>";
+// echo $largeBeverageWithChantillyAndChocolate->getPrice() . " €<br>";
+
+$beverage = BuilderPredefinedBeverage::getInstance()->getMostExpensiveBeverage();
+echo $beverage->getDescription() . "<br>";
+echo $beverage->getPrice() . " €<br>";
+
+$beverage2 = BuilderPredefinedBeverage::getInstance()->getCheapestBeverage();
+echo $beverage2->getDescription() . "<br>";
+echo $beverage2->getPrice() . " €<br>";
+
+$beverage3 = BuilderPredefinedBeverage::getInstance()->getChocolatViennois();
+echo $beverage3->getDescription() . "<br>";
+echo $beverage3->getPrice() . " €<br>";

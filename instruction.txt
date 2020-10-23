@@ -21,4 +21,4 @@ Sur chaque boissons on peut ajouter entre 0 et 4 suppléments
 - Creme : 0.10
 - Lait : 0.20
 - Chantilly : 1 -> Petit : 1, Moyen : 1.5, Grand : 2
-- Chocolat : 2 -> Petit : 2, Moyen : 2.5, Grand : 3
+- Chocolat : 2 -> Petit : 1, Moyen : 1.5, Grand : 2

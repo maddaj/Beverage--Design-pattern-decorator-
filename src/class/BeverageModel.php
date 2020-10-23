@@ -2,7 +2,6 @@
 
 class BeverageModel implements IBeverage
 {
-
     private $description;
     private $price;
     private $size;
@@ -20,8 +19,6 @@ class BeverageModel implements IBeverage
 
     public function getPrice(): float
     {
-        // YAGNI : you aren't gonna need it
-        // KISS : keep it simple stupid
         switch ($this->size) {
             case BeverageModel::SIZE_MEDIUM:
                 return $this->price * 1.3;

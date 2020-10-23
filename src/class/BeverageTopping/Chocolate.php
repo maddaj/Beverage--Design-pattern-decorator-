@@ -18,9 +18,4 @@ class Chocolate extends BaseBeverageTopping
     {
         return $this->beverage->getDescription() . ' with chocolate';
     }
-
-    public function getSize(): String
-    {
-        return $this->size;
-    }
 }

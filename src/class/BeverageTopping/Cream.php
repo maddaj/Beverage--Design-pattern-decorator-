@@ -11,9 +11,4 @@ class Cream extends BaseBeverageTopping
     {
         return $this->beverage->getDescription() . ' with cream';
     }
-
-    public function getSize(): String
-    {
-        return $this->size;
-    }
 }

@@ -11,9 +11,4 @@ class Milk extends BaseBeverageTopping
     {
         return $this->beverage->getDescription()  . ' with milk';
     }
-
-    public function getSize(): String
-    {
-        return $this->size;
-    }
 }
